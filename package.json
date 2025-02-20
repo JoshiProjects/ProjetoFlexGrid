@@ -1,18 +1,22 @@
 {
   "name": "flexgrid",
-  "private": true,
+  "homepage": "https://joshiprojects.github.io/ProjetoFlexGrid",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+    
   },
   "dependencies": {
     "@react-three/drei": "^10.0.0",
     "@react-three/fiber": "^9.0.4",
     "@types/three": "^0.173.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.173.0"
