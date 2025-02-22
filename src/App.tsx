@@ -11,23 +11,42 @@ function Cube({ position, color }: { position: [number, number, number]; color: 
     </mesh>
   );
 }
+function positionRandom(){
+  let arrayRandom: [number, number, number] = [
+    Math.random() * (1.5 - (-1.5)) + (-1.5), 
+    0, 
+    Math.random() * (1.5 - (-1.5)) + (-1.5) 
+  ]
+  return arrayRandom;
+}
 
 function BoxContainer({ layout }: { layout: string }) {
+
   const flexPositions: [number, number, number][] = [
-    [-1, 0, -1],
-    [1, 0, -1],
-    [-1, 0, 1],
-    [1, 0, 1]
+  //  x, z,  y
+    [-1.2, 0, -1],
+    [0, 0, -1],
+    [1.2, 0, -1],
+    [-1.2, 0, 0.3]
   ];
 
   const gridPositions: [number, number, number][] = [
-    [-1.5, 0, -1.5],
-    [-1.5, 0, -1.5],
-    [-1.5, 0, 1.5],
-    [1.5, 0, 1.5]
+    [-0.8, 0, -1.0],
+    [0.8, 0, -1.0],
+    [-0.8, 0, 0.7],
+    [0.8, 0, 0.7]
+  ];
+  
+  const desorganizadoPositions: [number, number, number][] = [
+    positionRandom(),
+    positionRandom(),
+    positionRandom(),
+    positionRandom()
   ];
 
-  const positions = layout === 'grid' ? gridPositions : flexPositions;
+
+  const positions = layout === 'grid' ? gridPositions 
+                  : layout==='flex'? flexPositions : desorganizadoPositions;
 
   return (
     <>
@@ -78,15 +97,15 @@ function App() {
   return (
     <div className="container">
       <div className="controls">
-        <label>
+        <label className='button'>
           <input type="radio" name="layout" value="default" checked={layout === 'default'} onChange={() => setLayout('default')} />
           Desorganizado
         </label>
-        <label>
+        <label className='button'>
           <input type="radio" name="layout" value="flex" checked={layout === 'flex'} onChange={() => setLayout('flex')} />
           Flexbox
         </label>
-        <label>
+        <label className='button'>
           <input type="radio" name="layout" value="grid" checked={layout === 'grid'} onChange={() => setLayout('grid')} />
           Grid
         </label>
@@ -94,8 +113,15 @@ function App() {
       <div className="canvas-container">
         <Scene layout={layout} />
       </div>
+      <h3>
+          Aprenda a organizar suas caixas! Veja o código e o repositório acessando o link abaixo e lendo o ReadMe
+      </h3>
+      <a href="https://github.com/JoshiProjects/ProjetoFlexGrid#">Projeto Flex Grid</a>
     </div>
   );
 }
 
 export default App;
+
+
+

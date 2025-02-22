@@ -4,3 +4,45 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  color: white;
+  flex-direction: column;
+}
+
+.container {
+  justify-items: center;  
+  margin-top: 10px;
+}
+.controls{
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.controls .button{
+  
+  display: flex;
+  align-items: center;
+  color: #000;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #5f5f5fab;
+  
+}
+
+.controls .button:hover{
+  transition: 1s;
+  box-shadow: 3px 3px 6px #5f5f5f;
+
+}
+
+.canvas-container{
+  width: 80vw;
+  height: 65vh;
+}
