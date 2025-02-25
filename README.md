@@ -2,7 +2,7 @@
 
  Criei esse porjeto visando mostrar como funciona minha linha de raciocínio com relação ao funcionamento e organização de layouts responsivos.😊
 
-##Como fazer os layout FlexBox
+## Como fazer os layout FlexBox
 
 Como vc conseguiu visualizar quando clicou no botão FlexBox, todos os quadrados estão com um espaçamento padrão e houve a quebra de linha, para vc conseguir fazer isso deverá usar flex-wrap e outras propriedades, veja abaixp.
 
@@ -72,7 +72,7 @@ Como vc conseguiu visualizar quando clicou no botão FlexBox, todos os quadrados
  - npm ou Yarn: Este projeto usa npm (Node Package Manager) ou yarn para gerenciamento de pacotes. Se você não tiver o npm instalado, ele vem com o Node.js. Se você preferir usar o yarn, instale-o globalmente com npm install -g yarn.
  - Editor de código: Recomenda-se usar um editor de código como Visual Studio Code, que oferece bom suporte para TypeScript e React.
 
-##Primeiro passo
+## Primeiro passo
 
   Faça um clone desse projeto.
 
@@ -80,7 +80,7 @@ Como vc conseguiu visualizar quando clicou no botão FlexBox, todos os quadrados
 git clone <Copiem a URL do repositório aqui>
 cd <Nome da Pasta>
 ```
-##Segundo passo
+## Segundo passo
 
   Instale as dependências do projeto.
 
@@ -93,7 +93,7 @@ Com yarn:
 yarn install
 ```
 
-##Terceiro passo
+## Terceiro passo
 
   Executar o projeto iniciando o servidor de desenvolvimento.
 
