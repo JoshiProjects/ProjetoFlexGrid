@@ -45,7 +45,7 @@ Como vc conseguiu visualizar quando clicou no botão FlexBox, todos os quadrados
 - **justify-content: space-around;** : Distribui os itens ao longo do eixo principal (horizontal), com espaço igual entre eles e nas extremidades.
 - **align-items: center;** : Alinha os itens verticalmente ao centro do contêiner.
 
-##Como fazer os layout Grid
+## Como fazer os layout Grid
   Para fazer o leyout de quando vc clica no botão grid, precisamos somente estabelecermos os valores de duas propriedades, as que se referem a coluna e linhas, veja o exemplo abaixo.
 
 ```css
