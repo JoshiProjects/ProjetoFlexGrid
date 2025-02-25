@@ -64,9 +64,11 @@ Como vc conseguiu visualizar quando clicou no botão FlexBox, todos os quadrados
 - **grid-template-rows: 1fr 1fr;** : Define duas linhas com a mesma altura, utilizando a unidade fr.
 - **gap: 10px;** : Define um espaçamento de 10 pixels entre as células do grid.
 
-  Caso vocês tenham alguma dificuldade em abrir o site, primeiro me informe e a seguir irei te mostrar como executar esse projeto localmente.
+  
 
-  **Pré-requisitos**
+  ## Caso vocês tenham alguma dificuldade em abrir o site, primeiro me informe e a seguir irei te mostrar como executar esse projeto localmente.
+
+  ### Pré-requisitos
 
  - Node.js: Certifique-se de ter o Node.js instalado (versão 14 ou superior). Você pode baixá-lo em nodejs.org.
  - npm ou Yarn: Este projeto usa npm (Node Package Manager) ou yarn para gerenciamento de pacotes. Se você não tiver o npm instalado, ele vem com o Node.js. Se você preferir usar o yarn, instale-o globalmente com npm install -g yarn.
