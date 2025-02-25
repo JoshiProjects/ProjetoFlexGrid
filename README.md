@@ -1,6 +1,6 @@
 # Projeto FlexBox e Grid
 
- Criei esse porjeto visando mostrar como funciona minha linha de raciocínio com relação ao funcionamento e organização de layouts responsivos.😊
+ Criei esse projeto visando mostrar como funciona minha linha de raciocínio com relação ao funcionamento e organização de layouts responsivos.😊
 
 ## Como fazer os layout FlexBox
 
